@@ -42,6 +42,7 @@ public class MyButton extends Button {
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent event) {
+        getParent().requestDisallowInterceptTouchEvent(true);
         switch (event.getAction()){
             case MotionEvent.ACTION_DOWN:
                 Log.e(TAG,"dispatchTouchEvent ACTION_DOWN");

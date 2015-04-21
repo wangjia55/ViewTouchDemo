@@ -2,12 +2,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.jacob.viewtouch.view.MyButton
-        android:id="@+id/myButton"
+    <com.jacob.viewtouch.view.MyLinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="测试Button的触摸事件传递"/>
+        android:layout_margin="10dp">
+
+        <com.jacob.viewtouch.view.MyButton
+            android:id="@+id/myButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="测试Button的触摸事件传递" />
+
+    </com.jacob.viewtouch.view.MyLinearLayout>
 
 
 </RelativeLayout>
